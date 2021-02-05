@@ -1,0 +1,22 @@
+﻿@model AmountViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <h1>Cheque Writer</h1>
+        <p>Write your cheques within no time. :)</p>
+        <form action="create-cheque" method="post">
+            <div asp-validation-summary="All" style="text-align:left;color:red;"></div>
+            <table>
+                <tr>
+                    <td>Enter Amount</td>
+                    <td><input type="text" required placeholder="Enter Amount" asp-for="NumberAmount"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="automation-submit" value="Create" asp-action="Index"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
