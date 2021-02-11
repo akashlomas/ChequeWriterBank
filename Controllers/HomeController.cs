@@ -29,7 +29,7 @@ namespace ChequeWriterBank.Controllers
             string isNegative = "";
             try
             {
-                var amount = Convert.ToDouble(model.NumberAmount).ToString();
+                var amount = Convert.ToDouble(model.AutomationAmount).ToString();
 
                 if (amount.Contains("-"))
                 {

@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   chequewriterbank:
-    image: ${DOCKER_REGISTRY-}chequewriterbank:100
+    image: ${DOCKER_REGISTRY-}chequewriterbank:latest
     build:
       context: .
       dockerfile: Dockerfile
